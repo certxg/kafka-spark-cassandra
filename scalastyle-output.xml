@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="5.0">
+ <file name="C:\Users\ak34635\jdwork\ide\scala-eclipse\workspace\raw-harvest-event-streaming\src\main\scala\com\deere\dwis\raw\harvest\streaming\Receiver.scala">
+  <error line="1" source="org.scalastyle.file.HeaderMatchesChecker" severity="error" message="Header does not match expected text"></error>
+  <error source="org.scalastyle.file.NewLineAtEofChecker" severity="error" message="File must end with newline character"></error>
+ </file>
+ <file name="C:\Users\ak34635\jdwork\ide\scala-eclipse\workspace\raw-harvest-event-streaming\src\main\scala\com\deere\dwis\raw\harvest\streaming\ActorWordCount.scala">
+  <error line="1" source="org.scalastyle.file.HeaderMatchesChecker" severity="error" message="Header does not match expected text"></error>
+  <error source="org.scalastyle.file.NewLineAtEofChecker" severity="error" message="File must end with newline character"></error>
+ </file>
+</checkstyle>
