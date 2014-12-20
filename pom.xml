@@ -231,7 +231,7 @@
 					<configuration>
 						<archive>
 							<manifest>
-								<mainClass>com.ajit.example.spark.sql.SparkSqlMain</mainClass>
+								<mainClass>com.ajit.example.kafka.spark.cassandra.ReadMessagesFromKafka</mainClass>
 							</manifest>
 						</archive>
 						<descriptorRefs>

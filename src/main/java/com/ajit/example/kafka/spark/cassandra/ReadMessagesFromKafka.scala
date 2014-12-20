@@ -13,8 +13,6 @@ class ReadMessagesFromKafka {
   def main(args: Array[String]) {
 
     val sc = new SparkConf(true)
-      .set("spark.cassandra.connection.host", "localhost")
-      .set("spark.cleaner.ttl", "3600")
       .setMaster("local[12]")
       .setAppName("Streaming Kafka App")
 
@@ -22,12 +20,9 @@ class ReadMessagesFromKafka {
 
     val kafkaParams = Map(
       "zookeeper.connect" -> "localhost:2181",
-      "zookeeper.connection.timeout.ms" -> "10000",
-      "group.id" -> "myGroup")
+      "zookeeper.connection.timeout.ms" -> "10000")
       
-      val topics = Map(
-        "ajit" -> 1
-  )
+      val topics = Map("ajit-topic" -> 1)
 
     val stream = KafkaUtils.createStream[String, String, StringDecoder, StringDecoder](
       ssc, kafkaParams, topics, StorageLevel.MEMORY_AND_DISK)
